@@ -75,16 +75,16 @@ canvas {
   border-radius: 0 0 20px 20px;
 }
 .c_text div#day:before {
-  content: "Day";
+  content: "Days";
   font-size: 0.4em;
 }
 .c_text div#hour:before {
-  content: "Hour";
+  content: "Hours";
   font-size: 0.4em;
 }
 
 .c_text div#minute:before {
-  content: "min";
+  content: "mins";
   font-size: 0.4em;
 }
 .c_text div#second:before {

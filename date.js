@@ -15,8 +15,12 @@ function newYear(){
     const h = Math.floor((gap %(day)) / (hour));
     const m = Math.floor((gap % (hour))/ (minute));
     const s = Math.floor((gap %  (minute)) / (second));
-
-    document.getElementById('year').innerText = years;
+    if (d === 0){
+        document.getElementById('year').innerText = `Happy new year ${years}`;
+    }else{
+        document.getElementById('year').innerText = `${years} is comming soon`;
+    }
+    
     document.getElementById('today').innerText = today;
     document.getElementById('day').innerText = d;
     document.getElementById('hour').innerText = h;
