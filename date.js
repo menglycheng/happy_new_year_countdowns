@@ -1,4 +1,7 @@
-var countDate = new Date('Jan 1, 2021 00:00:00').getTime()
+const today = new Date();
+const years = today.getFullYear() + 1;
+
+var countDate = new Date(`Jan 1, ${years} 00:00:00`).getTime()
 
 function newYear(){
     var now = new Date().getTime();
@@ -6,17 +9,20 @@ function newYear(){
     const second = 1000;
     const minute = second * 60;
     const hour = minute * 60;
-    const day = hour * 60;
+    const day = hour * 24;
 
     const d = Math.floor(gap / (day));
     const h = Math.floor((gap %(day)) / (hour));
     const m = Math.floor((gap % (hour))/ (minute));
     const s = Math.floor((gap %  (minute)) / (second));
 
+    document.getElementById('year').innerText = years;
+    document.getElementById('today').innerText = today;
     document.getElementById('day').innerText = d;
     document.getElementById('hour').innerText = h;
     document.getElementById('minute').innerText = m;
     document.getElementById('second').innerText = s;
+
 }
 setInterval(function(){
     newYear();
