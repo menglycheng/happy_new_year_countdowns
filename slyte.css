@@ -8,6 +8,9 @@ body {
 canvas {
   display: block;
 }
+.small{
+    font-size: .4em;
+}
 
 .c_text {
   background-color: transparent;
