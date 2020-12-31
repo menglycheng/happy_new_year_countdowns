@@ -1,4 +1,3 @@
-// Daniel Shiffman
 
 function Particle(x, y, hu, firework) {
   this.pos = createVector(x, y);
